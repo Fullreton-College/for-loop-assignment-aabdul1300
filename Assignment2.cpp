@@ -1,9 +1,21 @@
 #include <iostream>
-using namespace std;
 
 int main() {
+    int firstNum, secondNum;
 
-   /* Type your code here. */
+    
+    std::cin >> firstNum >> secondNum;
 
-   return 0;
+   
+    if (secondNum < firstNum) {
+        std::cout << "Second integer can't be less than the first." << std::endl;
+    } else {
+        
+        for (int i = firstNum; i <= secondNum; i += 5) {
+            std::cout << i << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    return 0;
 }
